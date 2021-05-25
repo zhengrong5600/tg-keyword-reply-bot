@@ -19,10 +19,10 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v1.1.0
         with:
-          username: zu1k
+          username: zhengrong5600
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: zu1k/tg-keyword-reply-bot/tg-keyword-reply-bot
+          repository: zhengrong5600/tg-keyword-reply-bot/tg-keyword-reply-bot
           tag_with_ref: true
         
         
