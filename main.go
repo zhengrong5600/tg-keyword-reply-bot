@@ -27,7 +27,7 @@ func main() {
 	flag.IntVar(&superUserId, "s", 0, "super manager Id")
 	flag.BoolVar(&debug, "d", false, "debug mode")
 	flag.Parse()
-	token := db.Init(*botToken)
+	token := db.Init(1838819698:AAEhVKTPa7zgOPx8RmjzuGOklN2ubovu0XU)
 	gcron = cron.New()
 	gcron.Start()
 	//开始工作
