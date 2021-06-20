@@ -23,7 +23,7 @@ var (
 )
 
 func main() {
-	botToken := flag.String("t", "", "your bot Token")
+	botToken := flag.String("t", "", "1838819698:AAEhVKTPa7zgOPx8RmjzuGOklN2ubovu0XU")
 	flag.IntVar(&superUserId, "s", 0, "super manager Id")
 	flag.BoolVar(&debug, "d", false, "debug mode")
 	flag.Parse()
@@ -36,7 +36,7 @@ func main() {
 
 func start(botToken string) {
 	var err error
-	bot, err = api.NewBotAPI(botToken)
+	bot, err = api.NewBotAPI(1838819698:AAEhVKTPa7zgOPx8RmjzuGOklN2ubovu0XU)
 	if err != nil {
 		log.Panic(err)
 	}
