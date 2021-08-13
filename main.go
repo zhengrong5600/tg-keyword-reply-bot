@@ -23,11 +23,11 @@ var (
 )
 
 func main() {
-	botToken := flag.String("t", "", "1845724979:AAG1SKxQM0cXV2ojmQ3dh8CkV1xEyjwtlwM")
+	botToken := flag.String("t", "", "your bot Token")
 	flag.IntVar(&superUserId, "s", 0, "super manager Id")
 	flag.BoolVar(&debug, "d", false, "debug mode")
 	flag.Parse()
-	token := db.Init(1610742860:AAEEBKdbeYvIiAwwDnj-uR2zAF9V1sOq0Jc)
+	token := db.Init(*botToken)
 	gcron = cron.New()
 	gcron.Start()
 	//开始工作
@@ -36,7 +36,7 @@ func main() {
 
 func start(botToken string) {
 	var err error
-	bot, err = api.NewBotAPI(1845724979:AAG1SKxQM0cXV2ojmQ3dh8CkV1xEyjwtlwM)
+	bot, err = api.NewBotAPI(botToken)
 	if err != nil {
 		log.Panic(err)
 	}
