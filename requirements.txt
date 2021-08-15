@@ -1,1 +1,1 @@
-build -ldflags "-w -s" -trimpath -o tgbot .
+go build -ldflags "-w -s" -trimpath -o tgbot .
